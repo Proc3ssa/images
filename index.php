@@ -15,6 +15,7 @@ class IMAGES{
     public function viewImg(){
 
         $dir = scandir($this -> directory);
+       
 
         
 
@@ -27,10 +28,10 @@ class IMAGES{
     $images = new IMAGES(__DIR__, "150px", "150px");
 
     $images -> viewImg();
-
+    var_dump($images);
 
 
 
 
 ?>
-not completed!!
+to be continued!!

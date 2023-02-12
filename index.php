@@ -55,6 +55,7 @@ class IMAGES{
                
                 echo $this -> castimage($dirs);
             }
+         
            
             }
 
@@ -72,6 +73,11 @@ class IMAGES{
     $images = new IMAGES(__DIR__, "150", "150");
 
     $images -> viewImg();
+
+    
+   
+
+
 
 
 

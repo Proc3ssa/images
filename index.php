@@ -29,19 +29,18 @@ class IMAGES{
 
     public function replace($dir): string{
     
-        $new_dir = str_replace('/','/',$dir );
+        $new_dir = str_replace("/\/",'/',$dir );
         return $new_dir;
     }
 
-    public function castImage($image){
+    public function castImage($image):string{
         
         $width = $this -> img_width;
         $height = $this -> img_height;
-        $dir = $this -> directory;
+        $dir = $this -> directory."/".$image;
 
-        echo '
-        <img src="'.$dir.'/"
-        '.$this -> replace($image).' width="'.$width.'" height="'.$height.'">';
+       return '
+        <img src="'.$dir.' width="'.$width.'" height="'.$height.'">';
 
     }
 
@@ -54,7 +53,7 @@ class IMAGES{
             if(is_file($dirs)){
             if($this -> exploded($dirs)){
                
-                echo $this -> castImage($dirs);
+                echo $this -> castimage($dirs)."</br>";
             }
            
             }

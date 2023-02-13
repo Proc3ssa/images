@@ -70,7 +70,7 @@ class IMAGES{
 
 } 
 
-    $images = new IMAGES(__DIR__.'/images', "150", "150");
+    $images = new IMAGES(__DIR__.'\images', "150", "150");
 
     $images -> viewImg();
 

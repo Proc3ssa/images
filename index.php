@@ -69,8 +69,10 @@ class IMAGES{
    
 
 } 
-
-    $images = new IMAGES(__DIR__, "150", "150");
+    $directory = __DIR__; //string
+    $img_width = 100;
+    $img_height = 100;
+    $images = new IMAGES($directory, $img_width, $img_height);
 
     $images -> viewImg();
 

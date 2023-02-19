@@ -12,3 +12,5 @@ Clone by copying and pasting
 4- on line $ an object has been created for the class called "images"
    replace the value for the "$directory" with your directory name (where your images are)
    and replace the value of "$img_width" and "$img_heigth" with your image width and height respectively.
+
+5- then move the index.php file to where you want it to work.

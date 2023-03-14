@@ -13,12 +13,12 @@ class IMAGES{
     }
 
     public function exploded($filename){
-        $split= explode('.', $filename);
+        $split= explode('.', $filename); 
         $extention = $split[1];
 
         $extentions = array("png","PNG","jpeg","JPEG","gif","GIF");
 
-        if(in_array($extention, $extentions)){
+        if(in_array($extention, $extentions)){ 
              return true;
         }
         else{

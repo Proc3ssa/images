@@ -37,7 +37,7 @@ class IMAGES{
        
         $width = $this -> img_width;
         $height = $this -> img_height;
-        $dir = $this -> directory."/".$image;
+        $dir = $image;
 
        return $this -> replace('
         <img src="'.$dir.'" width="'.$width.'" height="'.$height.'" alt="'.$image.'">');
